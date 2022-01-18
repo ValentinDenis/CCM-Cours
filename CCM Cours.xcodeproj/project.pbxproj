@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		357951362796F0F200351B24 /* Starwars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357951352796F0F200351B24 /* Starwars.swift */; };
 		357C714B2796AF6700A4DFAE /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357C714A2796AF6700A4DFAE /* Car.swift */; };
 		357C714D2796B50D00A4DFAE /* CarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357C714C2796B50D00A4DFAE /* CarTableViewCell.swift */; };
 		357C714F2796BC5C00A4DFAE /* DogFactResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357C714E2796BC5C00A4DFAE /* DogFactResponse.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		357951352796F0F200351B24 /* Starwars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Starwars.swift; sourceTree = "<group>"; };
 		357C714A2796AF6700A4DFAE /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		357C714C2796B50D00A4DFAE /* CarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarTableViewCell.swift; sourceTree = "<group>"; };
 		357C714E2796BC5C00A4DFAE /* DogFactResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogFactResponse.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				357C714A2796AF6700A4DFAE /* Car.swift */,
 				357C714C2796B50D00A4DFAE /* CarTableViewCell.swift */,
 				357C714E2796BC5C00A4DFAE /* DogFactResponse.swift */,
+				357951352796F0F200351B24 /* Starwars.swift */,
 			);
 			path = "CCM Cours";
 			sourceTree = "<group>";
@@ -167,6 +170,7 @@
 				357C714B2796AF6700A4DFAE /* Car.swift in Sources */,
 				35AD5BCD2795774800554732 /* AppDelegate.swift in Sources */,
 				35AD5BE42795B55400554732 /* ListViewController.swift in Sources */,
+				357951362796F0F200351B24 /* Starwars.swift in Sources */,
 				35AD5BCF2795774800554732 /* SceneDelegate.swift in Sources */,
 				357C714F2796BC5C00A4DFAE /* DogFactResponse.swift in Sources */,
 			);

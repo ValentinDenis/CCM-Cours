@@ -44,12 +44,16 @@ class ViewController: UIViewController {
     
     @IBAction func goToTableAction(_ sender: Any) {
         //Here we go to table
-        //let vc = ListViewController()
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "ListVCID")
+        let vc = storyboard.instantiateViewController(withIdentifier: "ListVCID") as? ListViewController
+        vc?.passedCar = Car(name: "", make: "", image: UIImage.add)
+        vc?.passedString = "Coucou"
         
-        self.navigationController?.pushViewController(vc, animated: true)
+        if let vc = vc {
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+        
     }
 }
 

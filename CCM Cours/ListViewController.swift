@@ -14,7 +14,9 @@ class ListViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     //Properties
-    var datasource: [String] = []
+    private var datasource: [String] = []
+    public var passedCar: Car?
+    public var passedString: String?
     
     //Life Cycle
     override func viewDidLoad() {
@@ -51,6 +53,17 @@ class ListViewController: UIViewController {
                 }
             }
     }
+    
+    private func storeToUserDefaults(valueToStore value: String) {
+        let ud = UserDefaults.standard
+        ud.set(value, forKey: "stored_value")
+    }
+    
+    private func getFromUserDefaults() -> String? {
+        let ud = UserDefaults.standard
+        let stringSaved = ud.string(forKey: "stored_value")
+        return stringSaved
+    }
 }
 
 extension ListViewController: UITableViewDelegate {
@@ -75,7 +88,6 @@ extension ListViewController: UITableViewDataSource {
         //Je récupère le fact au bon index dans mon datasource
         let fact = datasource[indexPath.row]
         
-        //Je créé ma cellule
         let cell = tableView.dequeueReusableCell(withIdentifier: "CatCellID", for: indexPath) as? CarTableViewCell
         
         //J'assigne aux bonnes propriétés
